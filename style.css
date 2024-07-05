@@ -37,9 +37,42 @@ ul li a {
 .btn {
     padding: 2px 20px;
     background-color: blue;
+    border-radius: 5px;
 }
 
 .logo {
-    margin-left: 11px;
+    margin-left: 12px;
     font-size: 18px;
+}
+
+.icon {
+    align-items: center;
+    font-size: 30px;
+    margin-right: 12px;
+    display: none
+}
+
+@media only screen and (max-width:600px) {
+    nav ul {
+        display: none;
+    }
+
+    .icon {
+        display: flex;
+        cursor: pointer;
+    }
+}
+.showData{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 51px;
+    background-color: rgb(168, 93, 93);
+    width: 100%;
+    height: 240px;
+    text-align: center;
+    padding: 0px;
+    gap: 22px;
 }
